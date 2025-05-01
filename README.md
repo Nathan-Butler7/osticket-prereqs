@@ -1,1 +1,1 @@
-# osticket-prereqs
+idk what to type
