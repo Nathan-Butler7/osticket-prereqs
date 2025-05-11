@@ -23,6 +23,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
+1. Creating Resource Groups and Virtual Machines
+
+Resource Group:
+
+- To create a Resource Group, go to the Azure Portal. In the middle of the homepage under 'Azure Services', click on 'Resource groups' and then select 'Create' to begin the process'.
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
 
 
 Create an Azure Virtual Machine Windows 10, 4 vCPUs
