@@ -29,15 +29,57 @@ Resource Group:
 
 - To create a Resource Group, go to the Azure Portal. In the middle of the homepage under 'Azure Services', click on 'Resource groups' and then select 'Create' to begin the process'.
 
+![Screenshot 2025-05-02 161517](https://github.com/user-attachments/assets/ec12459d-cb6b-48e2-9c15-cbb380493b23)
+
+- All rescources in a subsciption are billed together so leave that as default.
+- Resource group name can be named to your desire. I will call mine "osTicket".
+- When selecting a resource group region, it's recommended that you select a location close to where your control operations originate.
+- Click 'Review + create' -> 'Create'.
+
+![image](https://github.com/user-attachments/assets/50d8efe0-d58b-460b-b8d8-05b296ef5a42)
+
+Virtual Machines:
+
+- In the Azure Portal, use the search bar at the top os search for 'Virtual Machines" and select it.
+- In the display area, click 'Create' -> 'Azure virtual machine'.
+
+![Screenshot 2025-05-02 225357](https://github.com/user-attachments/assets/c78dd6c5-e884-40fe-83ac-4b2933348372)
+
+- Under 'Project details', assign your new resource group you just created (osTicket).
+- Give your Virtual Machine name "osticket-vm".
+- Select the resource region the same as the Resource groups ((Asia Pacific) Australia East).
+
+![image](https://github.com/user-attachments/assets/a45acb8c-7570-42aa-847b-aee985598bc4)
+
+- For Image, select 'Windows 10 Pro version 22H2 - x64 Gen2'.
+- Recommended for 'Size' you utilise "Standard_D2s_v5 - 2 vcpus, 8 GiB memory".
+- For 'Administrator Account' create your Username "labuser" and password can be anything. e.g; "osTicketPassword1!".
+
+![image](https://github.com/user-attachments/assets/5e8854b0-2b7d-4056-bad0-81824d17ef5b)
+
+- Be sure to tick the box for eligibily of a windows liscence.
+- Click 'Review + Create'.
+
+![image](https://github.com/user-attachments/assets/7f996f2b-c763-4ba2-bbfd-08d8fe10973e)
+
+- Wait for the VM to process till you see "Validation passed" on the top of the page.
+
+![Screenshot 2025-05-06 141709](https://github.com/user-attachments/assets/03ba5cf9-cf60-4dba-9bc6-3b7ded00c07e)
+
+- Then click 'Create'.
+- You have successfully created a Windows Virtual Machine.
+
+![Screenshot 2025-05-06 141743](https://github.com/user-attachments/assets/461d94d0-4c8e-4888-b191-f1aa8dbedd03)
+
+
+
+
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
 
 
-Create an Azure Virtual Machine Windows 10, 4 vCPUs
-- Name: osticket-vm
-- Username: labuser
-- Password: osTicketPassword1!
+
 
 Log into the VM with Remote Desktop
 
