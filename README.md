@@ -71,7 +71,12 @@ Virtual Machines:
 
 ![Screenshot 2025-05-06 141743](https://github.com/user-attachments/assets/461d94d0-4c8e-4888-b191-f1aa8dbedd03)
 
-
+Observing ICMP Traffic
+- On your PC, click the Windows 'start' icon to open up the menu and search up "Remote Desktop Connection".
+- If using Mac, install Microsoft Remote Desktop.
+- Copy windows VM Public IP address and paste it into the Remote Desktop Connection.
+- Click 'Show Options' and put in the user name for the windows VM (labuser).
+- Click 'connect'.
 
 
 -----------------------------------------------------------------------------
