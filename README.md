@@ -132,21 +132,41 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
 
 ![image](https://github.com/user-attachments/assets/38b18df6-986a-43e3-8c95-2bd99e1a1aa8)
 
+- Install PHP Manager for IIS (PHPManagerForIIS_V1.5.0).
+- In your folder (Quick Access) you will observe the 'osTicket-Installation' and click on it.
+- Open 'PHPManagerForIIS_V1.5.0.
 
+![image](https://github.com/user-attachments/assets/d6584ea8-f91a-4335-993c-9759f0001256)
+
+- Click 'Next' -> press 'I Agree' -> 'Next'. 
+- When installation is complete you can close te window.
+
+![image](https://github.com/user-attachments/assets/73ce697a-a298-4e25-9862-dc1843831f20)
+
+ 
+- Install the Rewrite Module (rewrite_amd64_en-US).
+- From winthin the same folder you're gonna install the Rewrite Module.
+- Click 'I accept' -> 'Install'.
+- Wait till intallation is complete and click 'Finish'.
+
+![image](https://github.com/user-attachments/assets/4f109ec3-5cff-4fbf-bf4c-ee65b96870dd)
+
+- Open a new File window.
+- Click on 'This PC' to extend and go to 'Windows (C:)'.
+- Make a new folder and call it 'PHP'.
+
+![image](https://github.com/user-attachments/assets/b91933ac-560e-4bd2-a0f2-79267d0e0c39)
+
+- From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “PHP” folder.
+- Right click the (php-7.3.8-nts-Win32-VC15-x86.zip) folder and click 'Extract all'.
+- Browse till you find the folder 'PHP' folder you just created and click 'Select Folder' -> 'Extract'.
+
+![image](https://github.com/user-attachments/assets/9b336334-13a7-4ad8-b593-2efa018ea671)
 
 
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
-
-
-From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
-
-From the “osTicket-Installation-Files” folder install the Rewrite Module (rewrite_amd64_en-US.msi)
-
-Create the directory C:\PHP
-
-From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
 
 From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
 
