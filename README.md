@@ -71,28 +71,74 @@ Virtual Machines:
 
 ![Screenshot 2025-05-06 141743](https://github.com/user-attachments/assets/461d94d0-4c8e-4888-b191-f1aa8dbedd03)
 
-Observing ICMP Traffic
+- Search up "Virtual Machines" and click on it, there you will discover your Virtual Machine.
+
+![image](https://github.com/user-attachments/assets/d9c3f136-bea5-4c5f-91fe-9391d61a50ef)
+
+Log into the VM with Remote Desktop
 - On your PC, click the Windows 'start' icon to open up the menu and search up "Remote Desktop Connection".
 - If using Mac, install Microsoft Remote Desktop.
 - Copy windows VM Public IP address and paste it into the Remote Desktop Connection.
 - Click 'Show Options' and put in the user name for the windows VM (labuser).
 - Click 'connect'.
+- Insert the password then click 'ok'.
+- Click 'Yes' to continue.
 
+![image](https://github.com/user-attachments/assets/fda72741-0438-4b5a-9d84-3124eb25398b)
 
------------------------------------------------------------------------------
------------------------------------------------------------------------------
+- Within the VM (osticket-vm), open your browser and copy/paste the <a href="https://drive.usercontent.google.com/download?id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD&export=download&authuser=0">osTicket-Installation-Files.zip</a> link.
 
+![image](https://github.com/user-attachments/assets/439c0d8f-8b91-4d25-b798-8e8af870439a)
 
+- Click 'Download anyway' and when it has downloaded you can click on the folder icon and take you the file downloads folder section. The folder should be called “osTicket-Installation-Files”
 
+![image](https://github.com/user-attachments/assets/72573046-d1f6-46a5-a4c5-c485834cd9f3)
 
-
-Log into the VM with Remote Desktop
-
-Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”
+- Drag the zip folder from the downloads section onto the VM desktop.
 - We will use the files in this folder to install osTicket and some of the dependencies.
 
-Install / Enable IIS in Windows WITH CGI
-- World Wide Web Services -> Application Development Features -> [X] CGI
+![image](https://github.com/user-attachments/assets/3a369161-cece-41e6-ad79-106d458a598d)
+
+- Right click on the unzipped folder and and click Extract all.
+
+![image](https://github.com/user-attachments/assets/d35670ca-428c-41d4-8fea-d780f29ba7f6)
+
+
+- Make sure it is going to this folder and click 'Exrtract'.
+- Once extraxted you can delete the original unzipped folder.
+
+![image](https://github.com/user-attachments/assets/19a8c420-b097-46dd-8d22-c82cd8b5698c)
+
+![image](https://github.com/user-attachments/assets/f0ee894b-4af1-4a7d-8efb-bcd1d9b83791)
+
+Install / Enable IIS (Internet Information Services) in Windows WITH CGI
+- To enable IIS on you VM windows search bar, type up and go to 'Control Panel'.
+
+![image](https://github.com/user-attachments/assets/1072a94b-abf4-451c-be2e-8f418242392b)
+
+- Under Programs click on 'Uninstall a program'.
+- Click on 'Turn Windows features on or off'.
+
+![image](https://github.com/user-attachments/assets/bd8e9ee8-cdf9-426a-bed6-e23bc4f83227)
+
+- Tick the box 'Internet Information Services' and expand it.
+- Expand World Wide Web Services and expand Application Development Features.
+- Tick the box for 'CGI' and click OK.
+- Once the message "Windows completed the requested changes" appears, close the window.
+
+![image](https://github.com/user-attachments/assets/d0a501c7-ac86-4952-bc4e-090d962e0780)
+
+- Open your web browser and type 127.0.0.1 into the address bar. You should see a page from IIS (Internet Information Services), which means your virtual machine is now working as a web server.
+
+![image](https://github.com/user-attachments/assets/38b18df6-986a-43e3-8c95-2bd99e1a1aa8)
+
+
+
+
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
 
 From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
 
