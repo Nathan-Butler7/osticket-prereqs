@@ -163,19 +163,41 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
 
 ![image](https://github.com/user-attachments/assets/9b336334-13a7-4ad8-b593-2efa018ea671)
 
+- From the “osTicket-Installation-Files” folder, install (VC_redist.x86).
+- Tick 'I agree' -> 'Install', then you can close the window.
 
+![image](https://github.com/user-attachments/assets/3695d8b4-b757-4fb4-bd5f-b9fb8cfd03cb)
 
------------------------------------------------------------------------------
------------------------------------------------------------------------------
+- From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.)
+- Click 'Next', tick 'I accept' -> 'Next'.
+- For Setup Type click on Typical -> 'Install'.
 
-From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
+![image](https://github.com/user-attachments/assets/19153721-1b90-433c-b21f-ed631af671d8)
 
-From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
-- Typical Setup ->
-- Launch Configuration Wizard (after install) ->
-- Standard Configuration ->
+- Launch Configuration Wizard (after install)
+- When installation is complete click 'Finish' -> 'Next'.
+- Choose 'Standard Configuration'.
+
+![image](https://github.com/user-attachments/assets/391e2014-7096-49c8-ba83-defa2b289a74)
+
+- 'Next' -> 'Next'
+- Input the details as follows for MySQL Server:
+- Password: root (do not get this wrong)
+
+![image](https://github.com/user-attachments/assets/db7b4893-1f93-40f1-948b-314fd62bbdde)
+
+- 'Next' -> 'Excecute'.
+- Wait for configuration to process then click 'Finish'.
+
+ ![image](https://github.com/user-attachments/assets/1cd2397f-2012-472e-a542-d7de7444668d)
+
+  
 - Username: root
 - Password: root
+
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 Open IIS as an Admin
 
