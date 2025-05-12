@@ -346,6 +346,101 @@ Assign Permissions: ost-config.php
 
 ![image](https://github.com/user-attachments/assets/3890ae32-290b-48f9-801a-13547125ca58)
 
+From the “osTicket-Installation-Files” folder, install HeidiSQL.
+- Open Heidi SQL
+
+![image](https://github.com/user-attachments/assets/dea7486d-68d6-45c3-9114-22f0ef6ecce4)
+
+
+- Click 'I accept the agreement' then 'Next' -> 'Next' -> 'Next' -> 'Next' -> 'Install' -> 'Finish'.
+
+![image](https://github.com/user-attachments/assets/4d0fc58b-ee51-472f-a328-c168a5421bde)
+
+![image](https://github.com/user-attachments/assets/3367b3b4-97de-4beb-a8e1-cb233e944ca1)
+
+![image](https://github.com/user-attachments/assets/f1548fd4-67a7-4b22-8bef-9c0cd2a208cd)
+
+- Skip here.
+
+![image](https://github.com/user-attachments/assets/90d90418-377e-47af-af2c-aa718cabc0b3)
+
+![image](https://github.com/user-attachments/assets/affa9a8c-be1e-4c5c-a0ce-354b6e253814)
+
+- With this HeidiSQL page, we're gonna make a connection to our database and with the database for osTicket to use.
+- Click 'New'.
+
+![image](https://github.com/user-attachments/assets/f9f1b9b9-c9e3-45e8-bda6-31430f0c04f9)
+
+MySQL Server:
+- User: root
+- Password: root
+- Click 'Open'.
+- This will open the connection to the database.
+
+![image](https://github.com/user-attachments/assets/168c1377-4115-4b91-abfe-f18bb961b3ed)
+
+- Create a database called “osTicket”
+- Right click on 'Unamed', click 'Create new' -> 'Database.
+
+![image](https://github.com/user-attachments/assets/efe32fdf-912d-4432-bcae-b674c6b12fd8)
+
+- Name: "osTicket".
+- Click 'OK'.
+
+![image](https://github.com/user-attachments/assets/5484bf5a-a027-4e2e-a8e5-0316e75c6a82)
+
+- You can observe that 'osTicket' is in the database.
+
+![image](https://github.com/user-attachments/assets/12769aca-66b8-44ea-88b7-16245557d04f)
+
+
+
+
+- Continue Setting up osTicket in the browser (click Continue)
+
+![image](https://github.com/user-attachments/assets/d27ec0dc-a21b-485c-a2a9-8e528eaef6a8)
+
+- In System Settings, create your Helpdesk Name. Mine will be "Nathan's Help Desk"
+- Make a email. e.g, (nathan.butler.it@gmail.com)
+
+![image](https://github.com/user-attachments/assets/b2ae5583-dec4-4a10-9e4a-74168c9ae5db)
+
+- Under Admin User, you can just put your name and last name.
+- Make a different email from the one you put in System Settings. mine is "me@nathanbutler.tech
+- For osTicket Admin use:
+- Username: adminuser 
+- Password: Password1
+
+![image](https://github.com/user-attachments/assets/affa9a8c-be1e-4c5c-a0ce-354b6e253814)
+
+- With this HeidiSQL page, we're gonna make a connection to our database and with the database for osTicket to use.
+- Click 'New'.
+
+![image](https://github.com/user-attachments/assets/f9f1b9b9-c9e3-45e8-bda6-31430f0c04f9)
+
+MySQL Server:
+- User: root
+- Password: root
+- Click 'Open'.
+- This will open the connection to the database.
+
+![image](https://github.com/user-attachments/assets/168c1377-4115-4b91-abfe-f18bb961b3ed)
+
+- Create a database called “osTicket”
+- Right click on 'Unamed', click 'Create new' -> 'Database.
+
+![image](https://github.com/user-attachments/assets/efe32fdf-912d-4432-bcae-b674c6b12fd8)
+
+- Name: "osTicket".
+- Click 'OK'.
+
+![image](https://github.com/user-attachments/assets/5484bf5a-a027-4e2e-a8e5-0316e75c6a82)
+
+- You can observe that 'osTicket' is in the database.
+
+![image](https://github.com/user-attachments/assets/12769aca-66b8-44ea-88b7-16245557d04f)
+
+
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
