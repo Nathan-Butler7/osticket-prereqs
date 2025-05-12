@@ -191,15 +191,27 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
 
  ![image](https://github.com/user-attachments/assets/1cd2397f-2012-472e-a542-d7de7444668d)
 
-  
-- Username: root
-- Password: root
+Open IIS as an Admin  
+- On your VM go to your windows search bar and type up "IIS" (Internet Information Services)
+- Click 'Run as administrator'
+
+![image](https://github.com/user-attachments/assets/c9dfdbd2-490d-43d1-94a8-1e58a93055f8)
+
+![image](https://github.com/user-attachments/assets/8e752850-392b-4667-a748-ee0dcb21c49b)
+
+-Register PHP from within IIS (PHP Manager -> Register new PHP version)  
+C:\PHP\php-cgi.exe). 
+
+![image](https://github.com/user-attachments/assets/04cb0c66-2378-4a22-9c42-f0be23e17726)
+
+![image](https://github.com/user-attachments/assets/2065892f-95e6-4075-af7f-5c5749ad26eb)
+
+
+- Then Reload IIS (Open IIS, Stop and Start the server. Under "Actions" on the right you can see the options to stop and start the server.)
 
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
-
-Open IIS as an Admin
 
 Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
 
