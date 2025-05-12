@@ -145,7 +145,6 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
 
 ![image](https://github.com/user-attachments/assets/73ce697a-a298-4e25-9862-dc1843831f20)
 
- 
 - Install the Rewrite Module (rewrite_amd64_en-US).
 - From winthin the same folder you're gonna install the Rewrite Module.
 - Click 'I accept' -> 'Install'.
@@ -393,6 +392,7 @@ MySQL Server:
 
 ![image](https://github.com/user-attachments/assets/12769aca-66b8-44ea-88b7-16245557d04f)
 
+3. Something
 - Continue Setting up osTicket in the browser (click Continue)
 
 ![image](https://github.com/user-attachments/assets/d27ec0dc-a21b-485c-a2a9-8e528eaef6a8)
