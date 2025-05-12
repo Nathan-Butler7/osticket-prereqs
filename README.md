@@ -364,8 +364,6 @@ From the “osTicket-Installation-Files” folder, install HeidiSQL.
 
 ![image](https://github.com/user-attachments/assets/90d90418-377e-47af-af2c-aa718cabc0b3)
 
-![image](https://github.com/user-attachments/assets/affa9a8c-be1e-4c5c-a0ce-354b6e253814)
-
 - With this HeidiSQL page, we're gonna make a connection to our database and with the database for osTicket to use.
 - Click 'New'.
 
