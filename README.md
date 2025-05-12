@@ -168,21 +168,21 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
 
 ![image](https://github.com/user-attachments/assets/3695d8b4-b757-4fb4-bd5f-b9fb8cfd03cb)
 
-- From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.)
+- From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32).
 - Click 'Next', tick 'I accept' -> 'Next'.
 - For Setup Type click on Typical -> 'Install'.
 
 ![image](https://github.com/user-attachments/assets/19153721-1b90-433c-b21f-ed631af671d8)
 
-- Launch Configuration Wizard (after install)
+- Launch Configuration Wizard (after install).
 - When installation is complete click 'Finish' -> 'Next'.
 - Choose 'Standard Configuration'.
 
 ![image](https://github.com/user-attachments/assets/391e2014-7096-49c8-ba83-defa2b289a74)
 
-- 'Next' -> 'Next'
+- 'Next' -> 'Next'.
 - Input the details as follows for MySQL Server:
-- Password: root (do not get this wrong)
+- Password: root (do not get this wrong).
 
 ![image](https://github.com/user-attachments/assets/db7b4893-1f93-40f1-948b-314fd62bbdde)
 
@@ -192,34 +192,62 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
  ![image](https://github.com/user-attachments/assets/1cd2397f-2012-472e-a542-d7de7444668d)
 
 Open IIS as an Admin  
-- On your VM go to your windows search bar and type up "IIS" (Internet Information Services)
-- Click 'Run as administrator'
+- On your VM go to your windows search bar and type up "IIS" (Internet Information Services).
+- Click 'Run as administrator'.
 
 ![image](https://github.com/user-attachments/assets/c9dfdbd2-490d-43d1-94a8-1e58a93055f8)
 
 ![image](https://github.com/user-attachments/assets/8e752850-392b-4667-a748-ee0dcb21c49b)
 
--Register PHP from within IIS (PHP Manager -> Register new PHP version)  
-C:\PHP\php-cgi.exe). 
+- Register PHP from within IIS (PHP Manager -> Register new PHP version).
 
 ![image](https://github.com/user-attachments/assets/04cb0c66-2378-4a22-9c42-f0be23e17726)
 
 ![image](https://github.com/user-attachments/assets/2065892f-95e6-4075-af7f-5c5749ad26eb)
 
+- Browse till you find (C:\PHP\php-cgi.exe). 
 
-- Then Reload IIS (Open IIS, Stop and Start the server. Under "Actions" on the right you can see the options to stop and start the server.)
+![image](https://github.com/user-attachments/assets/67279400-8ab7-465b-9ded-cb9847354330)
+
+![image](https://github.com/user-attachments/assets/524a7c71-4fb8-4372-98ed-c76ddefd988f)
+
+- Click 'OK'.
+
+![image](https://github.com/user-attachments/assets/f0e454e8-f49e-475d-a4d4-d417918d083b)
+
+- Then Reload IIS (Open IIS, Stop and Start the server. Under "Actions" on the right you can see the options to stop and start the server).
+
+![image](https://github.com/user-attachments/assets/4d02b1d4-7aa1-441d-a3b7-1be2085c7390)
+
+- Back in the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder.
+
+![image](https://github.com/user-attachments/assets/c255fe8c-0db0-498e-9149-e341c7e3a1aa)
+
+- Extract in this following Folder (osTicket-V1.15.8).
+
+![image](https://github.com/user-attachments/assets/1e0e33b6-aa74-4b6b-b523-03f110300def)
+
+- Open a new file folder.
+- Within “c:\inetpub\wwwroot”
+
+![image](https://github.com/user-attachments/assets/9bc4414f-dc24-4295-8b97-2798965e79fd)
+
+![image](https://github.com/user-attachments/assets/0efd4466-9b25-4f37-a4e3-58b09fe7adc0)
+
+- Copy/Paste the 'upload' folder from "osTicket-v1.15.8" into “c:\inetpub\wwwroot”
+
+![image](https://github.com/user-attachments/assets/6f452871-997a-49b3-baf3-fece6ff9efb7)
+
+![image](https://github.com/user-attachments/assets/33733c6c-2baf-4490-a558-b5124832e55a)
+
+- Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”.
+
+![image](https://github.com/user-attachments/assets/11875bed-1524-49cc-84c6-d1212a6a2ddb)
+
 
 
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
-
-Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
-
-Reload IIS (Open IIS, Stop and Start the server)
-
-Install osTicket v1.15.8
-- From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”
-- Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
 
 Reload IIS (Open IIS, Stop and Start the server)
 
