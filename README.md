@@ -240,36 +240,115 @@ Open IIS as an Admin
 
 ![image](https://github.com/user-attachments/assets/33733c6c-2baf-4490-a558-b5124832e55a)
 
-- Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”.
+- Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”. You can delete the old "upload" folder on "osTicket-v1.15.8".
 
 ![image](https://github.com/user-attachments/assets/11875bed-1524-49cc-84c6-d1212a6a2ddb)
 
+- Reload IIS (Open IIS, Stop and Start the server)
 
+![image](https://github.com/user-attachments/assets/4a1f82c9-14f2-4369-a388-c6e48ff4ed02)
 
------------------------------------------------------------------------------
------------------------------------------------------------------------------
+- Go to sites -> Default -> osTicket
 
-Reload IIS (Open IIS, Stop and Start the server)
+![image](https://github.com/user-attachments/assets/a1ff657b-15d2-492f-aaba-c7aaf6b1adaa)
 
-Go to sites -> Default -> osTicket
+![image](https://github.com/user-attachments/assets/9838ee5f-777f-42dd-ae31-68bbe0587309)
+
 - On the right, click “Browse *:80”
 
-Note that some extensions are not enabled
+![image](https://github.com/user-attachments/assets/ee849ce9-e150-4682-84b9-99359fef1ea8)
+
+- Opening a new browser, some required extensions are currently disabled.
+
+![image](https://github.com/user-attachments/assets/dd036dcd-8cdb-4aaa-9e6e-2c0d6ae5b478)
+
 - Go back to IIS, sites -> Default -> osTicket
+
+![image](https://github.com/user-attachments/assets/0ce83150-ad8d-4c05-b249-a1ebc670b149)
+
 - Double-click PHP Manager
+
+![image](https://github.com/user-attachments/assets/7f6115ca-41b6-421c-9b30-61c4dcd249f2)
+
 - Click “Enable or disable an extension”
+
+![image](https://github.com/user-attachments/assets/25983f0e-1bfd-4395-a7e7-265f5a5e69e3)
+
 - Enable: php_imap.dll
 - Enable: php_intl.dll
 - Enable: php_opcache.dll
+
+![image](https://github.com/user-attachments/assets/9bb5ee0b-6441-4319-8831-41e9b981eec6)
+
+![image](https://github.com/user-attachments/assets/1d2bdfa5-d487-4ff5-be46-89abd831c457)
+
+![image](https://github.com/user-attachments/assets/a65f8873-f887-42e2-8c31-21144f27af16)
+
 - Refresh the osTicket site in your browser, observe the changes
+
+![image](https://github.com/user-attachments/assets/f3c8f06c-d30c-4aeb-af6d-b387ec4ecc49)
 
 Rename: ost-config.php
 - From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 - To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
+![image](https://github.com/user-attachments/assets/1a228b6e-ec2a-45cc-8404-056b568f30dc)
+
+![image](https://github.com/user-attachments/assets/7d9fa9f9-b4c3-4c06-a0c1-ae905ae4c3fa)
+
+![image](https://github.com/user-attachments/assets/f6a07607-2147-499d-8788-25540bd1a522)
+
+- From: ost-sampleconfig.php
+- To: ost-config.php
+
+![image](https://github.com/user-attachments/assets/9835a55f-6ea4-4070-915b-2e6e7df57d3d)
+
 Assign Permissions: ost-config.php
-- Disable inheritance -> Remove All
-- New Permissions -> Everyone -> All
+- Right click 'ost-config.php' and go to Properties.
+
+![image](https://github.com/user-attachments/assets/4ddcf136-0d12-4d1b-a354-481cb0605922)
+
+- On the tabs, go to Security and click on 'Advanced'.
+
+![image](https://github.com/user-attachments/assets/02aa4127-7b51-4a9b-bf34-2117c3055aef)
+
+- Click 'Disable inheritance' -> 'Remove all inherited permissions from this object'.
+
+![image](https://github.com/user-attachments/assets/63f99eb6-4055-496e-907a-4526f6d3bcbe)
+
+![image](https://github.com/user-attachments/assets/c84b4775-62fc-4464-aca7-949831a4eabe)
+
+- 'Add' new permissions.
+
+![image](https://github.com/user-attachments/assets/b40e6484-3760-4f4b-8f66-7b200a822e6c)
+
+- Click on 'Select a principal'
+
+![Screenshot 2025-05-12 133655](https://github.com/user-attachments/assets/fd5b418d-45ff-4e36-9b44-085ed2c0ba7b)
+
+- In the box to enter object names, type "everyone" and click 'Check Names'.
+- Click 'OK'.
+
+![image](https://github.com/user-attachments/assets/5fabd0a8-7f02-4cb5-b034-8c0eaadedfab)
+
+- Under Basic permissions, tick 'Full control'.
+- Click 'OK'.
+
+![image](https://github.com/user-attachments/assets/791790bf-7b6d-46a7-b637-d1d59902f539)
+
+- Everyone should have Full control.
+- Click 'Apply' -> 'OK'.
+
+![image](https://github.com/user-attachments/assets/caf8e58c-22f3-44d0-bd47-efabf87e05f6)
+
+- You will observe under Security Permissions for Everyone has been allowed.
+- Click 'OK'.
+
+![image](https://github.com/user-attachments/assets/3890ae32-290b-48f9-801a-13547125ca58)
+
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 Continue Setting up osTicket in the browser (click Continue)
 - Name Helpdesk
