@@ -348,6 +348,7 @@ Assign Permissions: ost-config.php
 
 ![image](https://github.com/user-attachments/assets/3890ae32-290b-48f9-801a-13547125ca58)
 
+3. Install osTicket itself
 From the “osTicket-Installation-Files” folder, install HeidiSQL.
 - Open Heidi SQL
 
