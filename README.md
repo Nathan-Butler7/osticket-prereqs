@@ -75,6 +75,8 @@ Virtual Machines:
 
 ![image](https://github.com/user-attachments/assets/d9c3f136-bea5-4c5f-91fe-9391d61a50ef)
 
+2. Install the osTicket requirements
+
 Log into the VM with Remote Desktop
 - On your PC, click the Windows 'start' icon to open up the menu and search up "Remote Desktop Connection".
 - If using Mac, install Microsoft Remote Desktop.
@@ -139,7 +141,7 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
 ![image](https://github.com/user-attachments/assets/d6584ea8-f91a-4335-993c-9759f0001256)
 
 - Click 'Next' -> press 'I Agree' -> 'Next'. 
-- When installation is complete you can close te window.
+- When installation is complete you can close the window.
 
 ![image](https://github.com/user-attachments/assets/73ce697a-a298-4e25-9862-dc1843831f20)
 
