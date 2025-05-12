@@ -247,7 +247,8 @@ Open IIS as an Admin
 
 - Reload IIS (Open IIS, Stop and Start the server)
 
-![image](https://github.com/user-attachments/assets/4a1f82c9-14f2-4369-a388-c6e48ff4ed02)
+![Screenshot 2025-05-12 122714](https://github.com/user-attachments/assets/cb3f7774-09a4-48cc-a664-6330450bdd87)
+
 
 - Go to sites -> Default -> osTicket
 
@@ -352,7 +353,6 @@ From the “osTicket-Installation-Files” folder, install HeidiSQL.
 
 ![image](https://github.com/user-attachments/assets/dea7486d-68d6-45c3-9114-22f0ef6ecce4)
 
-
 - Click 'I accept the agreement' then 'Next' -> 'Next' -> 'Next' -> 'Next' -> 'Install' -> 'Finish'.
 
 ![image](https://github.com/user-attachments/assets/4d0fc58b-ee51-472f-a328-c168a5421bde)
@@ -392,7 +392,6 @@ MySQL Server:
 
 ![image](https://github.com/user-attachments/assets/12769aca-66b8-44ea-88b7-16245557d04f)
 
-3. Something
 - Continue Setting up osTicket in the browser (click Continue)
 
 ![image](https://github.com/user-attachments/assets/d27ec0dc-a21b-485c-a2a9-8e528eaef6a8)
