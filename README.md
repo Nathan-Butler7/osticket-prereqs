@@ -17,7 +17,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Setup a Resource Group and a Virtual Machine in Azure.
+- Set up a Resource Group and a Virtual Machine in Azure.
 - Install the osTicket requirements.
 - Install osTicket itself.
 
@@ -27,13 +27,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 Resource Group:
 
-- To create a Resource Group, go to the Azure Portal. In the middle of the homepage under 'Azure Services', click on 'Resource groups' and then select 'Create' to begin the process'.
+- To create a Resource Group, go to the Azure Portal. In the middle of the homepage under 'Azure Services', click 'Resource groups' and then select 'Create' to begin the process'.
 
 ![Screenshot 2025-05-02 161517](https://github.com/user-attachments/assets/ec12459d-cb6b-48e2-9c15-cbb380493b23)
 
-- All rescources in a subsciption are billed together so leave that as default.
-- Resource group name can be named to your desire. I will call mine "osTicket".
-- When selecting a resource group region, it's recommended that you select a location close to where your control operations originate.
+- All resources in a subscription are billed together so leave that as default.
+- Resource group names can be named according to your desire. I will call mine "osTicket".
+- When selecting a resource group region, selecting a location close to where your control operations originate is recommended
 - Click 'Review + create' -> 'Create'.
 
 ![image](https://github.com/user-attachments/assets/50d8efe0-d58b-460b-b8d8-05b296ef5a42)
@@ -51,13 +51,13 @@ Virtual Machines:
 
 ![image](https://github.com/user-attachments/assets/a45acb8c-7570-42aa-847b-aee985598bc4)
 
-- For Image, select 'Windows 10 Pro version 22H2 - x64 Gen2'.
-- Recommended for 'Size' you utilise "Standard_D2s_v5 - 2 vcpus, 8 GiB memory".
+- Select 'Windows 10 Pro version 22H2 - x64 Gen2' for Image.
+- Recommended for 'Size' you utilize "Standard_D2s_v5 - 2 vcpus, 8 GiB memory".
 - For 'Administrator Account' create your Username "labuser" and password can be anything. e.g; "osTicketPassword1!".
 
 ![image](https://github.com/user-attachments/assets/5e8854b0-2b7d-4056-bad0-81824d17ef5b)
 
-- Be sure to tick the box for eligibily of a windows liscence.
+- Be sure to tick the box for eligibility for a Windows license.
 - Click 'Review + Create'.
 
 ![image](https://github.com/user-attachments/assets/7f996f2b-c763-4ba2-bbfd-08d8fe10973e)
@@ -71,17 +71,17 @@ Virtual Machines:
 
 ![Screenshot 2025-05-06 141743](https://github.com/user-attachments/assets/461d94d0-4c8e-4888-b191-f1aa8dbedd03)
 
-- Search up "Virtual Machines" and click on it, there you will discover your Virtual Machine.
+- Search "Virtual Machines" and click on it, there you will discover your Virtual Machine.
 
 ![image](https://github.com/user-attachments/assets/d9c3f136-bea5-4c5f-91fe-9391d61a50ef)
 
 2. Install the osTicket requirements
 
 Log into the VM with Remote Desktop
-- On your PC, click the Windows 'start' icon to open up the menu and search up "Remote Desktop Connection".
-- If using Mac, install Microsoft Remote Desktop.
-- Copy windows VM Public IP address and paste it into the Remote Desktop Connection.
-- Click 'Show Options' and put in the user name for the windows VM (labuser).
+- On your PC, click the Windows 'start' icon to open up the menu and search "Remote Desktop Connection".
+- If using a Mac, install Microsoft Remote Desktop.
+- Copy the Windows VM Public IP address and paste it into the Remote Desktop Connection.
+- Click 'Show Options' and put in the user name for the Windows VM (labuser).
 - Click 'connect'.
 - Insert the password then click 'ok'.
 - Click 'Yes' to continue.
@@ -92,7 +92,7 @@ Log into the VM with Remote Desktop
 
 ![image](https://github.com/user-attachments/assets/439c0d8f-8b91-4d25-b798-8e8af870439a)
 
-- Click 'Download anyway' and when it has downloaded you can click on the folder icon and take you the file downloads folder section. The folder should be called “osTicket-Installation-Files”
+- Click 'Download anyway' and when it has downloaded you can click on the folder icon which takes you to the file downloads folder section. The folder should be called “osTicket-Installation-Files”.
 
 ![image](https://github.com/user-attachments/assets/72573046-d1f6-46a5-a4c5-c485834cd9f3)
 
@@ -101,7 +101,7 @@ Log into the VM with Remote Desktop
 
 ![image](https://github.com/user-attachments/assets/3a369161-cece-41e6-ad79-106d458a598d)
 
-- Right click on the unzipped folder and and click Extract all.
+- Right-click on the unzipped folder and click Extract all.
 
 ![image](https://github.com/user-attachments/assets/d35670ca-428c-41d4-8fea-d780f29ba7f6)
 
@@ -114,7 +114,7 @@ Log into the VM with Remote Desktop
 ![image](https://github.com/user-attachments/assets/f0ee894b-4af1-4a7d-8efb-bcd1d9b83791)
 
 Install / Enable IIS (Internet Information Services) in Windows WITH CGI
-- To enable IIS on you VM windows search bar, type up and go to 'Control Panel'.
+- To enable IIS on your VM windows search bar, type up and go to 'Control Panel'.
 
 ![image](https://github.com/user-attachments/assets/1072a94b-abf4-451c-be2e-8f418242392b)
 
@@ -146,9 +146,9 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
 ![image](https://github.com/user-attachments/assets/73ce697a-a298-4e25-9862-dc1843831f20)
 
 - Install the Rewrite Module (rewrite_amd64_en-US).
-- From winthin the same folder you're gonna install the Rewrite Module.
+- From within the same folder you're gonna install the Rewrite Module.
 - Click 'I accept' -> 'Install'.
-- Wait till intallation is complete and click 'Finish'.
+- Wait till the installation is complete and click 'Finish'.
 
 ![image](https://github.com/user-attachments/assets/4f109ec3-5cff-4fbf-bf4c-ee65b96870dd)
 
@@ -159,7 +159,7 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
 ![image](https://github.com/user-attachments/assets/b91933ac-560e-4bd2-a0f2-79267d0e0c39)
 
 - From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “PHP” folder.
-- Right click the (php-7.3.8-nts-Win32-VC15-x86.zip) folder and click 'Extract all'.
+- Right-click the (php-7.3.8-nts-Win32-VC15-x86.zip) folder and click 'Extract all'.
 - Browse till you find the folder 'PHP' folder you just created and click 'Select Folder' -> 'Extract'.
 
 ![image](https://github.com/user-attachments/assets/9b336334-13a7-4ad8-b593-2efa018ea671)
@@ -187,13 +187,13 @@ Install / Enable IIS (Internet Information Services) in Windows WITH CGI
 
 ![image](https://github.com/user-attachments/assets/db7b4893-1f93-40f1-948b-314fd62bbdde)
 
-- 'Next' -> 'Excecute'.
-- Wait for configuration to process then click 'Finish'.
+- 'Next' -> 'Execute'.
+- Wait for the configuration to process then click 'Finish'.
 
  ![image](https://github.com/user-attachments/assets/1cd2397f-2012-472e-a542-d7de7444668d)
 
 Open IIS as an Admin  
-- On your VM go to your windows search bar and type up "IIS" (Internet Information Services).
+- On your VM go to your Windows search bar and type up "IIS" (Internet Information Services).
 - Click 'Run as administrator'.
 
 ![image](https://github.com/user-attachments/assets/c9dfdbd2-490d-43d1-94a8-1e58a93055f8)
@@ -216,7 +216,7 @@ Open IIS as an Admin
 
 ![image](https://github.com/user-attachments/assets/f0e454e8-f49e-475d-a4d4-d417918d083b)
 
-- Then Reload IIS (Open IIS, Stop and Start the server. Under "Actions" on the right you can see the options to stop and start the server).
+- Then Reload IIS (Open IIS, Stop, and Start the server. Under "Actions" on the right you can see the options to stop and start the server).
 
 ![image](https://github.com/user-attachments/assets/4d02b1d4-7aa1-441d-a3b7-1be2085c7390)
 
@@ -306,11 +306,11 @@ Rename: ost-config.php
 ![image](https://github.com/user-attachments/assets/9835a55f-6ea4-4070-915b-2e6e7df57d3d)
 
 Assign Permissions: ost-config.php
-- Right click 'ost-config.php' and go to Properties.
+- Right-click 'ost-config.php' and go to Properties.
 
 ![image](https://github.com/user-attachments/assets/4ddcf136-0d12-4d1b-a354-481cb0605922)
 
-- On the tabs, go to Security and click on 'Advanced'.
+- On the tabs, go to Security and click 'Advanced'.
 
 ![image](https://github.com/user-attachments/assets/02aa4127-7b51-4a9b-bf34-2117c3055aef)
 
@@ -380,7 +380,7 @@ MySQL Server:
 ![image](https://github.com/user-attachments/assets/168c1377-4115-4b91-abfe-f18bb961b3ed)
 
 - Create a database called “osTicket”
-- Right click on 'Unamed', click 'Create new' -> 'Database.
+- Right-click on 'Unnamed', click 'Create new' -> 'Database.
 
 ![image](https://github.com/user-attachments/assets/efe32fdf-912d-4432-bcae-b674c6b12fd8)
 
@@ -398,7 +398,7 @@ MySQL Server:
 ![image](https://github.com/user-attachments/assets/d27ec0dc-a21b-485c-a2a9-8e528eaef6a8)
 
 - In System Settings, create your Helpdesk Name. Mine will be "Nathan's Help Desk"
-- For deafult email create a made up email (receives email from customers). e.g, (nathan.butler.it@gmail.com)
+- For default email create a made-up email (receives email from customers). e.g, (nathan.butler.it@gmail.com)
 
 ![image](https://github.com/user-attachments/assets/b2ae5583-dec4-4a10-9e4a-74168c9ae5db)
 
